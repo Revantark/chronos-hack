@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+.nav-bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    backdrop-filter: blur(15px);
+    /* background-color: transparent; */
+    color: var(--txt-color);
+    z-index: 1;
+    top: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    
+}
+.logo{
+    justify-self: start;
+    padding-left: 6rem;
+}
+.nav-links{
+    display: grid;
+    white-space: nowrap;
+    grid-auto-flow: column;
+    column-gap: 3rem;
+    padding-right: 6rem;
+    font-family: 'Josefin Sans', sans-serif;
+        align-content: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    justify-self: end;
+}
+.logo{
+    font-size: 1.5rem
+}
+.nav-links a{
+
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-links a:focus , a:hover{
+    text-decoration: underline var(--secondary-color);
+    text-underline-offset:4px;
+}
+@media screen and (max-width:700px){
+    .nav-bar{
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+    .logo{
+        justify-self: center;
+        padding: 0;
+        
+    }
+    .nav-links{
+        letter-spacing: normal;
+
+        padding-right: 0;
+        font-size: 0.7rem;
+        column-gap: 1.5rem;
+        
+        justify-content: center;
+        justify-items: center;
+        row-gap: 0.5rem;
+        grid-template-columns: repeat(3,min-content);
+        grid-auto-flow: row;
+        justify-self: center;
+    }
+    .nav-links a:nth-child(4){
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+}
