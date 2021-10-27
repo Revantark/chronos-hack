@@ -1,12 +1,17 @@
-import React from 'react'
-import './navbar.css'
+import React from 'react';
+import { Navbar } from "react-bootstrap";
+import './navbar.css';
+import logo from '../global_ui/logo';
 
 export default function NavBar() {
     return (
         <div id='nav-bar' className='nav-bar'
         >
         <div className="logo">
-            <span>Farmhouse</span>
+        <Navbar.Brand varaint="light">
+        <img src={logo} alt="" height="25" style={{paddingRight:'10px'}}/>
+        Farmhouse
+        </Navbar.Brand>
         </div>    
         <div  className='nav-links'>
       

@@ -9,7 +9,7 @@ export default function Footer(){
             <div style={{
                 color:'white'
             }} className="footer-bottom">
-                Copyright &copy; coding.Studio() Hackathon;
+                Copyright &copy; 2021 Farmhouse - All rights reserved
             </div>
         </section>
     )
