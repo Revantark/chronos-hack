@@ -1,5 +1,23 @@
 .details{
     display: grid;
-    width: 400px;
+    gap : 10px;
+    width: fit-content;
+    background: rgb(188, 227, 243);
+    justify-self: center;
+    padding: 40px;
+    font-size: 1.2rem;
     place-content: center;
 }   
+.details_root{
+    display: grid;
+    place-content: center;
+}
+.btn{
+    width: 20ch;
+    justify-self: center;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+    justify-self: center;
+}
