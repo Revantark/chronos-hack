@@ -1,0 +1,23 @@
+.feature{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 400px 400px;
+    gap: 4rem;
+
+}
+/* expert advice
+   
+*/
+.single-feature{
+    display: flex;
+    text-align: center;
+    font-size: large;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background:rgba(78, 102, 235, 0.075);
+    flex-direction: column;
+    transition: 200ms transform ease;
+}
+.single-feature:hover{
+    transform: scale(1.05);
+}

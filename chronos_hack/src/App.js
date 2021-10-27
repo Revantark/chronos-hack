@@ -11,6 +11,7 @@ import FarmerHome from './components/farmer/home';
 import VendorHome from './components/vendor/home';
 import PostDetails from './components/postDetails';
 import Shop from './components/shop';
+import Advice from './components/advice';
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,7 @@ function App() {
             <Route path="/vendor" component={VendorHome}/>
             <Route path="/details" component={PostDetails}/>
             <Route path="/shop" component={Shop}/>
+            <Route path="/advice" component={Advice}/>
             
             {/* <Route path="/" component={}/> */}
             <Route path="/" component={Home}/>

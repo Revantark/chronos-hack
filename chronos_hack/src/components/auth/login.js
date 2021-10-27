@@ -21,16 +21,14 @@ function Login({farmer=true}) {
         <div  className='nav-links'>
       
             <a  href="/">Home</a>
-            <a  href="#aboutUs">About AgriTech</a>       
-            <a  href="/loginVendor" >Login as Vendor</a>
-            <a  href="/loginFarmer" >Login as Farmer</a>
+            <a  href={`/login${farmer?"Vendor":"Farmer"}`} >Login as {farmer?"Vendor":'Farmer'}</a>
         </div>
         
         </div>
     <div class="box">
       
         <form>
-            <span class="textCenter">LOGIN</span>
+            <span class="textCenter">LOGIN {farmer?"Farmer":"Vendor"}</span>
             <div class="input-container">
                 <input type="text" required value={username} onChange={(e)=>setUsername(e.target.value)}/>
                 <label>Username</label>		

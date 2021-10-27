@@ -10,14 +10,22 @@
     top: 0;
     font-size: 1rem;
     font-weight: bold;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
     
 }
 .logo{
     justify-self: start;
     padding-left: 6rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
+.logo img{
+width: 69px;
+}
+
 .nav-links{
     display: grid;
     white-space: nowrap;

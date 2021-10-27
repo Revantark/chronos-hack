@@ -1,6 +1,7 @@
 /* FOOTER */
 .footer {
 	width: 100%;
+    font-size: 20px;
 	background:var(--primary-color);
 	display: block;
  }
@@ -46,7 +47,7 @@ ul {
 	margin-left: -40px;
 	list-style: none;
 	color: #fff;
-	font-size: 15px;
+	font-size: 20px;
 	letter-spacing: 0.5px;	
  }
 

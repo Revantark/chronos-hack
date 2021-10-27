@@ -9,10 +9,14 @@
   justify-items: center;
   place-content: center;
 }
-
+.revLovesDarlene{
+    position: fixed;
+    width: 100vw;
+    z-index: -1;
+}
 .title {
   display: block;
-  font-size: min(4rem,8vw);
+  font-size: min(6rem,8vw);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 8px;
@@ -21,7 +25,8 @@
 .subtitle {
   padding-top: 0.5rem;
   padding-left: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .caption{
 
