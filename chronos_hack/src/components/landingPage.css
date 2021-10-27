@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.lp_root {
+  background: var(--primary-color);
+  display: grid;
+  height: 90vh;
+  position: relative;
+  align-content: center;
+  justify-items: center;
+  place-content: center;
+}
+
+.title {
+  display: block;
+  font-size: min(4rem,8vw);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.subtitle {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+}
+.caption{
+
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+}
+.cchef{
+  margin: 0.5rem 0;
+  display: flex;
+  justify-self: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  gap: 1rem;
+  align-items: center;
+  
+
+}
+.cchef svg {
+  justify-self: end;
+}
+.bg{
+    background-size: cover;
+    position: fixed;
+    width: 100vw;
+
+    background-image: url('https://images.unsplash.com/photo-1558008749-736d955a1e55?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80');
+  background-color: red;
+  background-blend-mode: screen;
+}
+
+@media screen and (max-width:480px) {
+  .cchef svg {
+    height: 35px;
+    justify-self: start;
+  }
+  
+}
+.btn-reg {
+  background: var(--secondary-color);
+  width: 22ch;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  justify-self: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 250ms transform;
+}
+.btn-reg:hover{
+  transform: scale(1.025);
+  box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, 0.267),
+  0px 0px 2px 2px rgba(255, 0, 0, 0.100)
+  ;
+}
+.timer {
+  color: white;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: center;
+}
+.timer-b {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.sep {
+  border-left: 1px solid white;
+  height: 60px;
+  margin-left: 6px;
+  left: 50%;
+}
+.timer-b > span:first-child {
+  font-size: min(3rem,10vw);
+  font-family: "Bebas Neue", cursive;
+}
+.downIcon {
+  width: 30px;
+  animation: upAndDown 1.3s ease-in-out infinite;
+  height: 30px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+@keyframes upAndDown {
+  0% {
+    bottom: 3%;
+  }
+  50% {
+    bottom: 5%;
+  }
+  100% {
+    bottom: 3%;
+  }
+}
