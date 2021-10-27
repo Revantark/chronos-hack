@@ -2,7 +2,7 @@ import React from 'react'
 import './about.css'
 export default function About() {
     return (
-        <div id="codeCraft" className="fullscreen about">            
+        <div id="aboutUs" className="fullscreen about">            
             <span className="about-title" >
                 About Farmhouse
             </span>
