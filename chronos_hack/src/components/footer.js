@@ -12,7 +12,7 @@ export default function Footer(){
                 fontSize:'18px',
                 padding:'12px'
             }} className="footer-bottom">
-                Copyright &copy; coding.Studio() Hackathon;
+                Copyright &copy; 2021 Farmhouse - All rights reserved
             </div>
         </section>
     )
