@@ -10,10 +10,10 @@ export default function NavBar() {
         </div>    
         <div  className='nav-links'>
       
-            <a  href="#landingPage">Home</a>
-            <a  href="#dates">About AgriTech</a>       
-            <a  href="#codeCraft" >Login</a>
-        
+            <a  href="/">Home</a>
+            <a  href="#aboutUs">About AgriTech</a>       
+            <a  href="/loginVendor" >Login as Vendor</a>
+            <a  href="/loginFarmer" >Login as Farmer</a>
         </div>
         
         </div>
