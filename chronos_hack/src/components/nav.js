@@ -6,12 +6,12 @@ export default function NavBar() {
         <div id='nav-bar' className='nav-bar'
         >
         <div className="logo">
-            <span>FarmHouse</span>
+            <span>Farmhouse</span>
         </div>    
         <div  className='nav-links'>
       
             <a  href="/">Home</a>
-            <a  href="#aboutUs">About AgriTech</a>       
+            <a  href="#aboutUs">About</a>       
             <a  href="/loginVendor" >Login as Vendor</a>
             <a  href="/loginFarmer" >Login as Farmer</a>
             <a  href="/shop" >Shop</a>
