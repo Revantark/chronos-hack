@@ -10,26 +10,24 @@ export default function Features() {
             <p style={{
                 textAlign:'center',
                 fontSize:'1.5rem',
+                fontWeight: 'bold',
+                textDecoration: 'underline',
                
                 marginTop:0,
                 paddingTop:'1rem'
             }} >Farmhouse provides </p>
             <div className="feature">
                 <div className="single-feature">
-                    <span>Feature 1</span>
-                    <span>Something idk here</span>
+                    <span>Quality Assurance</span>
                 </div>
                 <div className="single-feature">
-                    <span>Feature 1</span>
-                    <span>Something idk here</span>
+                    <span>No Mediator</span>
                 </div>
                 <div className="single-feature">
-                    <span>Feature 1</span>
-                    <span>Something idk here</span>
+                    <span>Maximum Profit</span>
                 </div>
                 <div className="single-feature">
-                    <span>Feature 1</span>
-                    <span>Something idk here</span>
+                    <span>Hassle free management</span>
                 </div>
 
             </div>

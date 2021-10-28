@@ -3,3 +3,13 @@
     grid-template-columns: 500px;
     place-content: center;
 }
+
+.btn{
+    padding: 10px 20px;
+    font-size: x-large;
+    outline: none;
+    border-radius: 10px;
+    border:none;
+    background-color: cadetblue;
+    color: black;
+}

@@ -13,7 +13,7 @@ export default function NavBar() {
         <div  className='nav-links'>
       
             <a  href="/">Home</a>
-            <a  href="#aboutUs">About FarmHouse</a>       
+            <a  href="#aboutUs">About</a>       
             <a  href="/loginVendor" >Login as Vendor</a>
             <a  href="/loginFarmer" >Login as Farmer</a>
             <a  href="/shop" >Shop</a>

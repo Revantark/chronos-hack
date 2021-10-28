@@ -11,7 +11,7 @@ export default function LandingPage() {
             
                 <div className='caption' >
 
-                <span className='title' >FARMHOUSE</span>
+                <span className='title' >F<span style = {{fontSize: '70px'}} >ARM</span>H<span style = {{fontSize: '70px'}} >OUSE</span></span>
                 <span className="subtitle">Right Out Of Farm</span> 
                 
                 </div>

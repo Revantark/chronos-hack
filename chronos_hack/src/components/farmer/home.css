@@ -8,7 +8,55 @@
     background-color:#01579b;
     color: white;
 }
+.inputs{
+  justify-self: center;
+  display: grid;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.inputs input{
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+}
+.transactions{
+  padding: 24px;
+  display: flex;
+  flex-direction: column  ;
+  gap: 20px;
+  margin: auto 0;  
+  column-gap: 20px;
+}
+.butt{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 20ch;
+  justify-self: center;
+  padding:1rem;
+}
+.trans{
+  display: flex;
+  gap: 15px;
+  padding: 25px;
+  background:rgba(0, 0, 0, 0.068);
+  flex-direction: column  ;
+  place-content: center;
+  border-radius: 20px;
+}
 
+.row{
+  display: grid;
+  grid-template-columns: repeat(5,150px);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.052);
+  place-content: center;
+  gap: 10px;
+}
+.row span{
+  text-align: left;
+}
 .anchors{
     text-decoration: none;
     color: aqua;
