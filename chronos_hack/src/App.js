@@ -13,6 +13,7 @@ import PostDetails from './components/postDetails';
 import Advice from './components/advice';
 import Shop from './components/vendor/shop';
 import ShopDetails from './components/shopdetails';
+import Rev from './components/rev';
 function App() {
   return (
     <div className="App">
@@ -26,6 +27,7 @@ function App() {
             <Login />
 
             </Route>
+            <Route path="/rev" component={Rev}/>
             <Route path="/farmer" component={FarmerHome}/>
             <Route path="/vendor" component={VendorHome}/>
             <Route path="/details" component={PostDetails}/>

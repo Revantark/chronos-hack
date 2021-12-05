@@ -5,8 +5,9 @@ import './details.css'
 import { useHistory } from 'react-router'
 export default function PostDetails() {
     const history = useHistory()
+    const index = history.location.state?history.location.state.index:0;
     return (
-        <div className='details_root' >
+        <div className='details_root'>
             <div id='nav-bar' className='nav-bar'
         >
         <div className="logo">
@@ -64,7 +65,22 @@ export default function PostDetails() {
                 history.goBack()
             }} className='btn' >Back   </button>
 
-            <button className='btn' >Purchase</button>
+            <button className='btn' onClick={()=>
+            {
+                const r = localStorage.getItem('items')
+                if(r){
+                    const rrr = localStorage.getItem('items-b');
+                    const r1 = JSON.parse(rrr)
+                    const d1 = JSON.parse(r)
+                    const dd = d1[index]
+                    r1.push(dd)
+                    let d = [...d1]
+                    d.splice(index,1)
+                    localStorage.setItem('items-b',JSON.stringify(r1))
+                    localStorage.setItem('items',JSON.stringify(d))
+                }
+            }
+            } >Purchase</button>
             </div>
             
         </div>
