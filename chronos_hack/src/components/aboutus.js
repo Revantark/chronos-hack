@@ -4,11 +4,7 @@ export default function About() {
     return (
         <div id="aboutUs" className="fullscreen about">            
             <span className="about-title" >
-<<<<<<< HEAD
                 About Us 
-=======
-                About Us
->>>>>>> main
             </span>
             <div className="underline">
                 
