@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import './home.css' 
 import logo from '../../assets/logo.png'
 
@@ -8,7 +8,19 @@ export default function FarmerHome() {
     const [type,setType] = useState("");
     const [quantity,setQuantity] = useState("");
     const [price,setPrice] = useState("");
+    const [url,setUrl] = useState("");
+    const [p,setP] = useState([])
     const [stocks,setStocks] = useState([])
+    useEffect(() => {
+        const t = localStorage.getItem('items')
+        const tt = localStorage.getItem('items-b')
+        if(t){
+            setStocks(JSON.parse(t))
+        }
+        if(tt){
+            setP(JSON.parse(tt))
+        }
+    }, [])
     return (
         <div>
             <div id='nav-bar' className='nav-bar'
@@ -65,16 +77,28 @@ export default function FarmerHome() {
             style={{
                 width:'200px'
             }} type="text" placeholder="Price" />
+            <input
+            id='in3'
+             onChange={(e)=>{
+                setUrl(e.target.value)
+            }}
+            style={{
+                width:'200px'
+            }} type="text" placeholder="Image URL" />
             </div>
             
             <button onClick={()=>{
                 setStocks((e)=>{
-                    return [...e,{
+                    const re = [...e,{
                         name:name,
                         type:type,
                         quantity:quantity,
-                        price:price
+                        price:price,
+                        url:url
                     }]
+                    localStorage.setItem('items',JSON.stringify(re))
+
+                    return re;
                 })
                 const s = document.getElementById('in')
                 s.value=""
@@ -149,6 +173,19 @@ export default function FarmerHome() {
             marginTop:'0rem',
             fontWeight:'bold'
         }} >Last Transactions</p>
+            {
+                p.map((s,i)=>{
+                    return (
+                        <div className="row">
+                <span>-</span>
+                <span>{s.type}</span>
+                <span>{s.name}</span>
+                <span>{s.quantity}</span>
+                <span>{s.price}</span>
+            </div>
+                    )
+                })
+            }
             <div className="row">
                 <span>1</span>
                 <span>Grains</span>
